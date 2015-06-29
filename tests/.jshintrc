@@ -1,0 +1,16 @@
+// .jshintrc
+//
+//
+
+{
+    "maxerr"        : 5,
+    "camelcase"     : true,
+    "indent"        : 2,
+    "expr"          : true,
+    "undef"         : false,
+    "globals": {
+      "modernizr" : true,
+      "classie"   : true
+      //"snap.svg"  : true
+    }
+}

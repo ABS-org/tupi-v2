@@ -1,0 +1,20 @@
+{
+  "important"                   : false,
+  "import"                      : false,
+  "adjoining-classes"           : false,
+  "box-model"                   : false,
+	"compatible-vendor-prefixes"  : false,
+	"duplicate-background-images" : false,
+	"outline-none"                : false,
+	"overqualified-elements"      : false,
+	"text-indent"                 : false,
+  "display-property-grouping"   : false,
+  "star-property-hack"          : false,
+  "unqualified-attributes"      : false,
+  "fallback-colors"             : false,
+  "qualified-headings"          : false,
+  "regex-selectors"             : false,
+  "box-sizing"                  : false,
+  "universal-selector"          : false,
+  "known-properties"            : false
+}
