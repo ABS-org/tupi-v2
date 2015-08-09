@@ -1,0 +1,49 @@
+
+.main-title {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 22px;
+  .title_text {
+    font-size: 24px;
+    font-weight: bold;
+    .subtext {
+      font-size: 16px;
+      color: $gray;
+      display: block;
+      font-weight: normal;
+    }
+  }
+  &.has-icon {
+    .text_icon {
+      display: block;
+      text-align: center;
+    }
+    > span {
+      text-align: center;
+      display: block;
+    }
+    > span+span {
+      padding: 20px 0 0 0;
+    }
+    @media (min-width: 401px) {
+      display: table;
+      vertical-align: middle;
+      > span {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: left;
+      }
+      > span+span {
+        padding: 0 0 0 20px;
+      }
+      .title_icon.circle {
+        border-radius: 50%;
+        background: #efefef;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        text-align: center;
+      }
+    }
+  }
+}

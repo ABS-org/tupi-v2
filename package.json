@@ -24,9 +24,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ABS-org/tupi/issues"
+    "url": "https://github.com/ABS-org/tupi-v2/issues"
   },
-  "homepage": "https://ABS-org.github.io/Tupi",
+  "homepage": "https://ABS-org.github.io/tupi-v2",
   "devDependencies": {
     "bower": "^1.3.1",
     "grunt": "^0.4.4",

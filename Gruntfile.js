@@ -27,7 +27,7 @@ module.exports = function (grunt) {
      * Clean files and folders
      ************************************/
     clean: {
-      dist: ['tupi/compiled/css/']
+      dist: ['src/compiled/css/']
     },
 
     /************************************
@@ -36,12 +36,12 @@ module.exports = function (grunt) {
      ************************************/
     sass: {
       options: {
-        includePaths: ['tupi/scss/base'],
+        includePaths: ['src/scss/base'],
         outputStyle: 'nested'
       },
       build: {
         files: {
-          'tupi/compiled/css/build.css'         : 'tupi/scss/build.scss'
+          'src/compiled/css/build.css'         : 'src/scss/build.scss'
         }
       }
     },
@@ -66,7 +66,7 @@ module.exports = function (grunt) {
         csslintrc: '<%= path.tests %>/.csslintrc'
       },
       strict: {
-        src: ['tupi/compiled/css/,**/*.css']
+        src: ['src/compiled/css/,**/*.css']
       }
     },
 
@@ -125,7 +125,7 @@ module.exports = function (grunt) {
         updateConfigs: [],
         commit: true,
         commitMessage: '%VERSION%',
-        commitFiles: ['package.json', 'bower.json', 'tupi/compiled/css/', 'tupi/compiled/js/'], // '-a' for all files
+        commitFiles: ['package.json', 'bower.json', 'src/compiled/css/', 'src/compiled/js/'], // '-a' for all files
         createTag: true,
         tagName: '%VERSION%',
         tagMessage: '%VERSION%',

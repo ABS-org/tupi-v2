@@ -54,7 +54,70 @@ $color-notification:    $brand-danger;
 .brand-cool          { color: $brand-cool; }
 .brand-cool-light    { color: lighten($brand-cool, 2.5%); }
 
+/*		========  tupi 2 colors =======     */
 
+/*	--- JENIPAPO/BLACK --- */
+
+$jenipapo-calmer:		#333;
+$jenipapo-calm: 		#4D4D4D;
+$jenipapo:				#555;
+$black:					$jenipapo;
+$jenipapo-energy:		#585858;
+$jenipapo-energized:	#727275;
+
+/*	--- TABATINGA/WHITE --- */
+
+$tabatinga-calmer:		#E1E1E1;
+$tabatinga-calm:		#FBFBFB;
+$tabatinga:				#D7D7DA;
+$white:					$tabatinga;
+$tabatinga-energy:		#F1F1F4;
+$tabatinga-energized:	#FFF;
+
+/*	--- SKY/BLUE --- */
+
+$sky-calmer:			#3fa7df;
+$sky-calm:				#51c2f9;
+$sky:					#227fbb;
+$blue:					$sky;
+$sky-energy:			#47a2da;
+$sky-energized:			#61bcf4;
+
+/*	--- SUN/YELLOW --- */
+
+$sun-calmer:			#f9ad31;
+$sun-calm:				#ffc748;
+$sun:					#f2c500;
+$yellow:				$sun;
+$sun-energy:			#ffe100;
+$sun-energized:			#fffb1a;
+
+/*	--- TREE/GREEN --- */
+
+$tree-calmer:			#546D24;
+$tree-calm:				#6e873e;
+$tree:					#00A185;
+$green:					$tree;
+$tree-energy:			#32c932;
+$tree-energized:		#4ce34c;
+
+/*	--- URUCUM/RED --- */
+
+$urucum-calmer:			#c62760;
+$urucum-calm:			#e0417a;
+$urucum:				#c23824;
+$red:					$urucum;
+$urucum-energy:			#ff1f00;
+$urucum-energized:		#ff391a;
+
+/*	--- MASSAPE/PURPLE --- */
+
+$massape-calmer:		#8356ab;
+$massape-calm:			#9d70c5;
+$massape:				#6b31a8;
+$purple:				$massape;
+$massape-energy:		#7e42cc;
+$massape-energized:		#985ce6;
 
 //== Scaffolding
 //
@@ -63,12 +126,12 @@ $color-notification:    $brand-danger;
 //** Background color for `<body>`.
 $body-bg:               #fafafa !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $jenipapo-calmer !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $sky-calmer !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      darken($sky-calmer, 15%) !default;
 
 
 //== Typography
@@ -95,7 +158,7 @@ $font-size-h5:            $font-size-base !default;
 $font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
 
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        1.428571429 !default; // 20/14
+$line-height-base:        1.62857143 !default; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 $line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
 
@@ -521,21 +584,21 @@ $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-$state-success-text:             #3c763d !default;
-$state-success-bg:               #dff0d8 !default;
-$state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
+$state-success-text:             #01a283 !default;
+$state-success-bg:               #def0d8 !default;
+$state-success-border:           #dae9d6 !default;
 
-$state-info-text:                #31708f !default;
-$state-info-bg:                  #d9edf7 !default;
-$state-info-border:              darken(adjust-hue($state-info-bg, -10), 7%) !default;
+$state-info-text:                #217ebb !default;
+$state-info-bg:                  #d7edfb !default;
+$state-info-border:              #b3d9ee !default;
 
-$state-warning-text:             #8a6d3b !default;
-$state-warning-bg:               #fcf8e3 !default;
-$state-warning-border:           darken(adjust-hue($state-warning-bg, -10), 5%) !default;
+$state-warning-text:             #f9ab2d !default;
+$state-warning-bg:               #fbf4e1 !default;
+$state-warning-border:           #ece8c5 !default;
 
-$state-danger-text:              #a94442 !default;
-$state-danger-bg:                #f2dede !default;
-$state-danger-border:            darken(adjust-hue($state-danger-bg, -10), 5%) !default;
+$state-danger-text:              #c03724 !default;
+$state-danger-bg:                #fde0e2 !default;
+$state-danger-border:            #dbb2ae !default;
 
 
 //== Tooltips
@@ -645,7 +708,7 @@ $modal-sm:                    300px !default;
 //
 //## Define alert colors, border radius, and padding.
 
-$alert-padding:               15px !default;
+$alert-padding:               12px 22px !default;
 $alert-border-radius:         $border-radius-base !default;
 $alert-link-font-weight:      bold !default;
 
