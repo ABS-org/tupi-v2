@@ -40,6 +40,11 @@
 .panel-title > .small > a {
   color: inherit;
 }
+.panel-title > a:hover,
+.panel-title > a:focus {
+  text-decoration: none;
+  color: inherit;
+}
 .panel-footer {
   padding: 10px 15px;
   background-color: #f5f5f5;

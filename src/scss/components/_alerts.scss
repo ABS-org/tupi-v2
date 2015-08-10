@@ -100,9 +100,22 @@
   }
 }
 .alert-light {
-  background: #fff;
-  border-color: #ceced0;
-  color: #727274;
+  background-color: #ffffff;
+  border-color: #cdced0;
+  color: #444444;
+  a {
+    color: #444444;
+    font-weight: bold;
+    text-decoration: underline;
+    &:hover {
+      color: #444444;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+  h4 {
+    border-top-color: #693c96;
+  }
   h1,h2,h3 {
     color: #727274;
   }
