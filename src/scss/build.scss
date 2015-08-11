@@ -1,7 +1,9 @@
 // FONT 1: Open Sans; FONT 2: Roboto
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Open+Sans+Condensed:300|Roboto:400,700,100|Roboto+Slab:700|Roboto+Condensed:700);
 
-@import "theme.scss";
+@import "variables.scss";
+
+@import "base.scss";
 
 @import "components/_titles.scss";
 @import "components/_buttons.scss";
@@ -23,9 +25,3 @@
 @import "components/icons/base_icons.scss";
 @import "components/icons/menu_icons.scss";
 @import "components/icons/title_icons.scss";
-
-
-@import "base/_main.scss";
-@import "base/_main-header.scss";
-@import "base/_main-footer.scss";
-@import "base/_frontpage.scss";
