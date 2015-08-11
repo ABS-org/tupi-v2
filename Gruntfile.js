@@ -11,7 +11,8 @@ module.exports = function (grunt) {
     path: {
       src: 'src',
       dist: 'dist',
-      tests: 'tests',
+      examples: 'examples',
+      tests: 'tests'
     },
 
     // Metadata
@@ -106,7 +107,7 @@ module.exports = function (grunt) {
         },
       },
       html: {
-        files: 'examples/**/*.html',
+        files: '<%= path.examples %>/**/*.html',
         options: {
           livereload: true,
         },
