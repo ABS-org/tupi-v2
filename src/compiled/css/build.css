@@ -1,5 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Open+Sans+Condensed:300|Roboto:400,700,100|Roboto+Slab:700|Roboto+Condensed:700);
-@import url(../../../bower_components/bootstrap/dist/css/bootstrap.min.css);
 .gray-darker {
   color: #222222; }
 
@@ -2568,7 +2567,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
   height: 24px; }
 
 .icon128 {
-  background: url('../../../../assets/sprites/base_icons_128.png') no-repeat top left;
+  background: url('../../assets/sprites/base_icons_128.png') no-repeat top left;
   width: 128px;
   height: 128px; }
 
@@ -2963,7 +2962,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
   background-position: -16770px 0; }
 
 .icon64 {
-  background: url('../../../../assets/sprites/base_icons_64.png') no-repeat top left;
+  background: url('../../assets/sprites/base_icons_64.png') no-repeat top left;
   width: 64px;
   height: 64px; }
 
@@ -3358,7 +3357,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
   background-position: -8514px 0; }
 
 .icon32 {
-  background: url('../../../../assets/sprites/base_icons_32.png') no-repeat top left;
+  background: url('../../assets/sprites/base_icons_32.png') no-repeat top left;
   width: 32px;
   height: 32px; }
 
@@ -3753,7 +3752,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
   background-position: -4386px 0; }
 
 .icon16 {
-  background: url('../../../../assets/sprites/base_icons_16.png') no-repeat top left;
+  background: url('../../assets/sprites/base_icons_16.png') no-repeat top left;
   width: 16px;
   height: 16px; }
 
@@ -4001,7 +4000,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
   background-position: -2080px 0; }
 
 .icon8 {
-  background: url('../../../../assets/sprites/base_icons_8.png') no-repeat top left;
+  background: url('../../assets/sprites/base_icons_8.png') no-repeat top left;
   width: 8px;
   height: 8px; }
 
@@ -4418,14 +4417,14 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
 .icon-title-circle {
   width: 64px;
   height: 64px;
-  background: url('../../../../assets/sprites/titulos.png') no-repeat;
+  background: url('../../../src/assets/sprites/titulos.png') no-repeat;
   background-position: -2px -2px;
   background-color: transparent; }
 
 .icon-title-light {
   width: 64px;
   height: 64px;
-  background: url('../../../../assets/sprites/titulos.png') no-repeat;
+  background: url('../../../src/assets/sprites/titulos.png') no-repeat;
   background-position: -2px -68px;
   background-color: transparent; }
 
@@ -4459,7 +4458,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
 .icon-title-light {
   width: 64px;
   height: 64px;
-  background: url('../../../../assets/sprites/titulos.png') no-repeat;
+  background: url('../../../src/assets/sprites/titulos.png') no-repeat;
   background-position: -2px -68px;
   background-color: transparent; }
 
@@ -4493,7 +4492,7 @@ a.list-group-item-danger.active, button.list-group-item-danger.active, a.list-gr
 .icon-title-dark {
   width: 64px;
   height: 64px;
-  background: url('../../../../assets/sprites/titulos.png') no-repeat;
+  background: url('../../../src/assets/sprites/titulos.png') no-repeat;
   background-position: -2px -136px;
   background-color: transparent; }
 

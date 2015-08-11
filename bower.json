@@ -1,7 +1,7 @@
 {
   "name": "tupi2",
   "version": "0.0.0",
-  "homepage": "https://github.com/ABS-org/tupi",
+  "homepage": "https://github.com/ABS-org/tupi-v2",
   "authors": [
     "Marcus Vinicius de Barros Pontes <marcusviniciusbp2gmail.com>",
     "Thiago de Lima <tdelima@gmail.com>",
@@ -14,9 +14,7 @@
     "coleções"
   ],
   "main": [
-    "dist/css/tupi.min.css",
-    "dist/js/plugins.min.js",
-    "dist/js/tupi.min.js"
+    "src/compiled/css/build.css"
   ],
   "license": "MIT",
   "ignore": [
