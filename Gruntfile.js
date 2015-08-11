@@ -9,25 +9,20 @@ module.exports = function (grunt) {
 
     // Default Paths
     path: {
-      bower: 'bower_components',
+      src: 'src',
+      dist: 'dist',
       tests: 'tests',
     },
 
     // Metadata
     pkg: grunt.file.readJSON('package.json'),
-    banner: '/*!\n' +
-            ' * Tupi v<%= pkg.version %> (<%= pkg.homepage %>)\n' +
-            ' * Author: <%= pkg.author %>\n' +
-            ' * Contributors: <%= pkg.contributors %>\n' +
-            ' * Licensed under <%= pkg.license %>\n' +
-            ' */\n',
 
     /************************************
      * grunt-contrib-clean
      * Clean files and folders
      ************************************/
     clean: {
-      dist: ['src/compiled/css/']
+      dist: ['<%= path.dist %>']
     },
 
     /************************************
@@ -35,13 +30,14 @@ module.exports = function (grunt) {
      * Compile SCSS to CSS using node-sass
      ************************************/
     sass: {
-      options: {
-        includePaths: ['src/scss/base'],
-        outputStyle: 'nested'
+      dev: {
+        files: {
+          '<%= path.src %>/css/build.css': '<%= path.src %>/scss/build.scss'
+        }
       },
       build: {
         files: {
-          'src/compiled/css/build.css'         : 'src/scss/build.scss'
+          '<%= path.dist %>/theme.css': '<%= path.src %>/scss/build.scss'
         }
       }
     },
@@ -66,35 +62,51 @@ module.exports = function (grunt) {
         csslintrc: '<%= path.tests %>/.csslintrc'
       },
       strict: {
-        src: ['src/compiled/css/,**/*.css']
+        src: ['<%= path.src %>/css/**/*.css']
       }
     },
 
     /************************************
-     * grunt-banner
-     * Adds a simple banner to files
+     * grunt-contrib-cssmin
+     * Minify CSS files
      ************************************/
-    usebanner: {
-      options: {
-        position: 'top',
-        banner: '<%= banner %>'
-      },
-      files: {
-        src: ['css/**/*.css',
-              'js/**/*.js']
+    cssmin: {
+      target: {
+        files: {
+          '<%= path.dist %>/theme.min.css': ['<%= path.dist %>/theme.css']
+        }
       }
     },
 
+    /************************************
+     * grunt-contrib-imagemin
+     * Min Image files
+     ************************************/
+    imagemin: { // Task
+      dynamic: { // Another target
+        files: [{
+          expand: true, // Enable dynamic expansion
+          cwd: '<%= path.src %>/assets', // Src matches are relative to this path
+          src: ['**/*.{png,jpg,gif,svg}'], // Actual patterns to match
+          dest: '<%= path.dist %>' // Destination path prefix
+        }]
+      }
+    },
+
+    /************************************
+     * grunt-contrib-watch
+     * Watch Files
+     ************************************/
     watch: {
       styles: {
-        files: '**/*.scss',
-        tasks: ['sass'],
+        files: '<%= path.src %>/**/*.scss',
+        tasks: ['sass:dev'],
         options: {
           livereload: true,
         },
       },
       html: {
-        files: '**/*.html',
+        files: 'examples/**/*.html',
         options: {
           livereload: true,
         },
@@ -124,13 +136,12 @@ module.exports = function (grunt) {
         files: ['package.json', 'bower.json'],
         updateConfigs: [],
         commit: true,
-        commitMessage: '%VERSION%',
-        commitFiles: ['package.json', 'bower.json', 'src/compiled/css/', 'src/compiled/js/'], // '-a' for all files
+        commitMessage: 'Release %VERSION%',
+        commitFiles: ['-a'], // for all files
         createTag: true,
-        tagName: '%VERSION%',
-        tagMessage: '%VERSION%',
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
         push: true,
-        //pushTo: 'master',
         gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d' // options to use with '$ git describe'
       }
     }
@@ -146,9 +157,6 @@ module.exports = function (grunt) {
   // Displays the execution time of grunt tasks
   require('time-grunt')(grunt);
 
-  // Prepare to push new version task
-  grunt.registerTask('newver', ['clean', 'usebanner']);
-
   // Test task
   grunt.registerTask('test', ['jshint', 'csslint']);
 
@@ -156,6 +164,11 @@ module.exports = function (grunt) {
   grunt.registerTask('server', ['connect', 'watch']);
 
   // Default task
-  grunt.registerTask('default', ['server', 'watch']);
+  grunt.registerTask('default', ['test', 'server']);
 
+  // Build task
+  grunt.registerTask('build', ['clean', 'test', 'sass', 'cssmin', 'imagemin']);
+
+  // Publish task
+  grunt.registerTask('publish', ['build', 'bump']);
 };

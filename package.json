@@ -20,7 +20,8 @@
   "contributors": [
     "Marcus Vinicius de Barros Pontes <marcusviniciusbp@gmail.com>",
     "Thiago de Lima <tdelima@gmail.com>",
-    "Alberto Souza <albertosouza@gmail.com>"
+    "Alberto Souza <albertosouza@gmail.com>",
+    "Sávio Lucena <saviogl@gmail.com>"
   ],
   "license": "MIT",
   "bugs": {
@@ -37,9 +38,12 @@
     "grunt-contrib-connect": "^0.8.0",
     "grunt-contrib-csslint": "^0.2.0",
     "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-cssmin": "^0.13.0",
     "grunt-contrib-watch": "^0.6.1",
     "grunt-sass": "^0.16.1",
     "load-grunt-tasks": "^0.6.0",
-    "time-grunt": "^0.4.0"
+    "time-grunt": "^0.4.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-imagemin": "^0.9.4"
   }
 }
