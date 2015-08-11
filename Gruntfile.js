@@ -137,7 +137,7 @@ module.exports = function (grunt) {
         updateConfigs: [],
         commit: true,
         commitMessage: 'Release %VERSION%',
-        commitFiles: ['-a'], // for all files
+        commitFiles: ['package.json', 'bower.json'], //[-a] for all files
         createTag: true,
         tagName: 'v%VERSION%',
         tagMessage: 'Version %VERSION%',
@@ -168,7 +168,4 @@ module.exports = function (grunt) {
 
   // Build task
   grunt.registerTask('build', ['clean', 'test', 'sass', 'cssmin', 'imagemin']);
-
-  // Publish task
-  grunt.registerTask('publish', ['build', 'bump']);
 };
