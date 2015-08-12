@@ -1,0 +1,22 @@
+{
+  "name": "tupi-v2-gitpage",
+  "version": "0.0.3",
+  "homepage": "http://abs-org.github.io/tupi-v2/",
+  "authors": [
+    "Marcus Vinicius de Barros Pontes <marcusviniciusbp@gmail.com>",
+    "Thiago de Lima <tdelima@gmail.com>",
+    "Sávio Lucena <saviogl@gmail.com>"
+  ],
+  "description": "TUPI: Tema da Comunidade de Práticas",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.5"
+  }
+}

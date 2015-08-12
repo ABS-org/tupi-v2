@@ -1,0 +1,34 @@
+{
+  "name": "tupi-v2-gitpage",
+  "version": "0.0.3",
+  "homepage": "http://abs-org.github.io/tupi-v2/",
+  "authors": [
+    "Marcus Vinicius de Barros Pontes <marcusviniciusbp@gmail.com>",
+    "Thiago de Lima <tdelima@gmail.com>",
+    "Sávio Lucena <saviogl@gmail.com>"
+  ],
+  "description": "TUPI: Tema da Comunidade de Práticas",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "bower": "^1.3.1",
+    "grunt": "^0.4.4",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-connect": "^0.8.0",
+    "grunt-contrib-csslint": "^0.2.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-cssmin": "^0.13.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.6.0",
+    "time-grunt": "^0.4.0",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-imagemin": "^0.9.4"
+  }
+}
