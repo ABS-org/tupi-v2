@@ -15,17 +15,6 @@ module.exports = function (grunt) {
       tests: 'tests'
     },
 
-    // Metadata
-    pkg: grunt.file.readJSON('package.json'),
-
-    /************************************
-     * grunt-contrib-clean
-     * Clean files and folders
-     ************************************/
-    clean: {
-      dist: ['<%= path.dist %>']
-    },
-
     /************************************
      * grunt-contrib-copy
      * Clean files and folders
@@ -57,74 +46,16 @@ module.exports = function (grunt) {
     },
 
     /************************************
-     * grunt-contrib-jshint
-     * Validate files with JSHint
-     ************************************/
-    jshint: {
-      options: {
-        jshintrc: '<%= path.tests %>/.jshintrc'
-      },
-      all: ['Gruntfile.js', 'js/**/*.js']
-    },
-
-    /************************************
-     * grunt-contrib-csslint
-     * Lint CSS files
-     ************************************/
-    csslint: {
-      options: {
-        csslintrc: '<%= path.tests %>/.csslintrc'
-      },
-      strict: {
-        src: ['<%= path.src %>/css/**/*.css']
-      }
-    },
-
-    /************************************
-     * grunt-contrib-cssmin
-     * Minify CSS files
-     ************************************/
-    cssmin: {
-      target: {
-        files: {
-          '<%= path.dist %>/theme.min.css': ['<%= path.dist %>/theme.css']
-        }
-      }
-    },
-
-    /************************************
-     * grunt-contrib-imagemin
-     * Min Image files
-     ************************************/
-    imagemin: { // Task
-      dynamic: { // Another target
-        files: [{
-          expand: true, // Enable dynamic expansion
-          cwd: '<%= path.src %>/assets', // Src matches are relative to this path
-          src: ['**/*.{png,jpg,gif,svg}'], // Actual patterns to match
-          dest: '<%= path.dist %>' // Destination path prefix
-        }]
-      }
-    },
-
-    /************************************
      * grunt-contrib-watch
      * Watch Files
      ************************************/
     watch: {
-      styles: {
-        files: '<%= path.src %>/**/*.scss',
-        tasks: ['sass:dev'],
+      website: {
+        files: ['css/**/*.css', 'js/**/*.js', 'index.html'],
         options: {
           livereload: true,
         },
-      },
-      html: {
-        files: '<%= path.examples %>/**/*.html',
-        options: {
-          livereload: true,
-        },
-      },
+      }
     },
 
     /************************************
@@ -152,15 +83,9 @@ module.exports = function (grunt) {
   // Displays the execution time of grunt tasks
   require('time-grunt')(grunt);
 
-  // Test task
-  grunt.registerTask('test', ['jshint', 'csslint']);
-
   // Server task
   grunt.registerTask('server', ['connect', 'watch']);
 
   // Default task
-  grunt.registerTask('default', ['test', 'server']);
-
-  // Build task
-  grunt.registerTask('build', ['test', 'copy', 'cssmin', 'imagemin']);
+  grunt.registerTask('default', ['copy', 'server']);
 };
