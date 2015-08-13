@@ -18,6 +18,6 @@
   ],
   "dependencies": {
     "bootstrap": "3.3.5",
-    "tupi2": "~0.0.3"
+    "tupi2": "~0.0.4"
   }
 }
