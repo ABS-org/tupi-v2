@@ -2,20 +2,24 @@
   "name": "tupi2",
   "version": "0.0.3",
   "homepage": "https://github.com/ABS-org/tupi-v2",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ABS-org/tupi-v2"
+  },  
   "authors": [
     "Marcus Vinicius de Barros Pontes <marcusviniciusbp2gmail.com>",
     "Thiago de Lima <tdelima@gmail.com>",
     "Alberto Souza <albertosouza@gmail.com>",
     "Sávio Lucena <saviogl@gmail.com>"
   ],
-  "description": "Coleção de estilos e componentes reutilizáveis.",
+  "description": "Tupi - Coleção de estilos e componentes reutilizáveis",
   "keywords": [
     "estilos",
     "components",
     "coleções"
   ],
   "main": [
-    "src/compiled/css/build.css"
+    "dist/theme.min.css"
   ],
   "license": "MIT",
   "ignore": [
@@ -29,7 +33,9 @@
     "docs"
   ],
   "dependencies": {
-    "bootstrap": "3.3.5",
-    "jquery": ">= 1.9.1"
+    "bootstrap": "3.3.5"
+  },
+  "devDependencies": {
+    "jquery": "~2.1.4"
   }
 }

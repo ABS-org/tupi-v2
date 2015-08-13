@@ -1,13 +1,13 @@
 {
   "name": "tupi2",
   "version": "0.0.3",
-  "description": "Coleção de estilos e componentes reutilizáveis.",
+  "description": "Tupi - Coleção de estilos e componentes reutilizáveis",
   "scripts": {
     "test": "."
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ABS-org/tupi.git"
+    "url": "git://github.com/ABS-org/tupi-v2"
   },
   "keywords": [
     "estilos",
@@ -18,7 +18,6 @@
     "Marcus Vinicius de Barros Pontes <marcusviniciusbp@gmail.com>"
   ],
   "contributors": [
-    "Marcus Vinicius de Barros Pontes <marcusviniciusbp@gmail.com>",
     "Thiago de Lima <tdelima@gmail.com>",
     "Alberto Souza <albertosouza@gmail.com>",
     "Sávio Lucena <saviogl@gmail.com>"
