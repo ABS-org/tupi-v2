@@ -21,26 +21,26 @@ module.exports = function (grunt) {
      ************************************/
     copy: {
       main: {
-        files: [{// Bower - JQuery
+        files: [{ // Bower - JQuery
           expand: true,
-          flatten: true,
-          src: '<%= path.bower %>/jquery/jquery.js',
+          cwd: '<%= path.bower %>/',
+          src: 'jquery/dist/jquery.js',
           dest: 'js/'
         }, { // Bower - Boostrap JS
           expand: true,
-          flatten: true,
-          src: '<%= path.bower %>/bootstrap/dist/js/bootstrap.js',
+          cwd: '<%= path.bower %>/',
+          src: 'bootstrap/dist/js/bootstrap.js',
           dest: 'js/'
         }, { // Bower - Boostrap CSS
           expand: true,
-          flatten: true,
-          src: '<%= path.bower %>/bootstrap/dist/css/bootstrap.css',
+          cwd: '<%= path.bower %>/',
+          src: ['bootstrap/dist/css/bootstrap.css', 'bootstrap/dist/fonts/*'],
           dest: 'css/'
-        }, { // Bower - Boostrap FONTS
+        }, { // Bower - Tupi
           expand: true,
-          flatten: true,
-          src: '<%= path.bower %>/bootstrap/dist/fonts/*',
-          dest: 'fonts/',
+          cwd: '<%= path.bower %>/',
+          src: 'tupi2/dist/**',
+          dest: 'css/',
         }]
       },
     },
