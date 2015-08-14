@@ -1,0 +1,419 @@
+/** ==========================
+------ Correções tupi --------
+========================== **/
+
+/** Barra de neveção **/
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #777777;
+    background-color: #e1e1e1;
+}
+
+.navbar-default {
+    background-color: #ffffff;
+    border-bottom: 10px solid #e1e1e1;
+}
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+@media (min-width: 768px)
+.navbar {
+    /* border-radius: 4px; */
+}
+
+.nav > li > a {
+    position: relative;
+    display: block;
+    padding: 16px 15px;
+}
+
+/* Background das páginas */    
+.container {
+    background-color: #f1f1f1;
+}
+
+/** input e label do warning **/
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label,
+.has-warning .form-control-feedback {
+  color: #f9ad31;
+}
+
+.has-warning .form-control,
+.has-warning .form-control:focus,
+.has-warning .input-group-addon {
+  border: 1px solid #f9ad31;
+}
+
+/** input e label do ERROR **/
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label,
+.has-error .form-control-feedback {
+  color: #c62760;
+}
+.has-error .form-control,
+.has-error .form-control:focus,
+.has-error .input-group-addon {
+  border: 1px solid #c62760;
+}
+
+/** input e label do Sucess **/
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label,
+.has-success .form-control-feedback {
+  color: #00a185;
+}
+.has-success .form-control,
+.has-success .form-control:focus,
+.has-success .input-group-addon {
+  border: 1px solid #00a185;
+}
+
+/** Migalha de pão **/
+.breadcrumb {
+  padding: 8px 15px;
+  margin-bottom: 21px;
+  list-style: none;
+  background:none;
+  border-radius: 0;
+}
+.breadcrumb > li {
+  display: inline-block;
+}
+.breadcrumb > li + li:before {
+  content: "/\00a0";
+  padding: 0 5px;
+  color: #cccccc;
+}
+.breadcrumb > .active {
+  color: #999999;
+}
+
+/** Paginação **/
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 21px 0;
+  border-radius: 0;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 10px 18px;
+  line-height: 1.42857143;
+  text-decoration: none;
+  color: #227fbb;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  margin-left: -1px;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 3;
+  color: #f1f1f1;
+  background-color: #227fbb;
+  border-color: #dddddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 2;
+  color: #999999;
+  background-color: #f5f5f5;
+  border-color: #e1e1e1;
+  cursor: default;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #999999;
+  background-color: #ffffff;
+  border-color: #e1e1e1e1;
+  border-color: #e1e1e1e1;
+  cursor: not-allowed;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 18px 30px;
+  font-size: 19px;
+  line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/** paginação simples **/
+.pager {
+  padding-left: 0;
+  margin: 21px 0;
+  list-style: none;
+  text-align: center;
+  display: inline-flex;
+}
+.pager li {
+  display: inline;
+}
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 0;
+  margin: 0 4px;
+  border-radius: 100px;
+}
+.pager li > a:hover,
+.pager li > a:focus {
+  color: #f1f1f1;
+  text-decoration: none;
+  background-color: #337ab7;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: #999999;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+/** alerta **/
+.alert-primary {
+  background-color: #d8edfc;
+  border: 1px solid #b3d9ee;
+  color: #227fbb;
+  border-radius: 3px;
+}
+.alert-primary hr {
+  border-top-color: #438912;
+}
+a.alert-primary {
+  color: #227fbb;
+  border: none;
+}
+
+a.alert-primary {
+  color: #227fbb!important;
+}
+
+.alert-dados img {
+    margin: 0 20px 0 0;
+}
+
+a.alert-info {
+  color: #FFFFFF!important;
+  border: none;
+}
+
+
+a.alert-warning {
+  color: #f9ab2d!important;
+  border: none;
+}
+
+/** Progress bar **/
+.progress {
+  overflow: hidden;
+  height: 10px;
+  margin-bottom: 21px;
+  background-color: #cccccc;
+  border-radius: 0;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  font-size: 13px;
+  line-height: 21px;
+  color: #ffffff;
+  text-align: center;
+  background-color: #227fbb;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  -webkit-transition: width 0.8s ease;
+  -o-transition: width 0.8s ease;
+  transition: width 0.8s ease;
+  border-radius:10px;
+}
+.progress-striped .progress-bar,
+.progress-bar-striped {
+  background-image: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(0deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+  -webkit-background-size: 10px 10px;
+          background-size: 10px 10px;
+}
+.progress.active .progress-bar,
+.progress-bar.active {
+  -webkit-animation: progress-bar-stripes 1s linear infinite;
+  -o-animation: progress-bar-stripes 1s linear infinite;
+  animation: progress-bar-stripes 1s linear infinite;
+}
+.progress-bar-success {
+  background-color: #469b84;
+}
+.progress-striped .progress-bar-success {
+  background-image: -webkit-linear-gradient(45deg, rgba(77, 227, 78, 0.15) 25%, transparent 25%, transparent 50%, rgba(77, 227, 78, 0.15) 50%, rgba(77, 227, 78, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(77, 227, 78, 0.15) 25%, transparent 25%, transparent 50%, rgba(77, 227, 78, 0.15) 50%, rgba(77, 227, 78, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(77, 227, 78, 0.15) 25%, transparent 25%, transparent 50%, rgba(77, 227, 78, 0.15) 50%, rgba(77, 227, 78, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-info {
+  background-color: #8156ac;
+}
+.progress-striped .progress-bar-info {
+  background-image: -webkit-linear-gradient(45deg, rgba(156, 112, 197, 0.15) 25%, transparent 25%, transparent 50%, rgba(156, 112, 197, 0.15) 50%, rgba(156, 112, 197, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(156, 112, 197, 0.15) 25%, transparent 25%, transparent 50%, rgba(156, 112, 197, 0.15) 50%, rgba(156, 112, 197,0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(156, 112, 197, 0.15) 25%, transparent 25%, transparent 50%, rgba(156, 112, 197, 0.15) 50%, rgba(156, 112, 197, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-warning {
+  background-color: #f9ad31;
+}
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 252, 30, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 252, 30, 0.15) 50%, rgba(255, 252, 30, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(255, 252, 30, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 252, 30, 0.15) 50%, rgba(255, 252, 30, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(255, 252, 30, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 252, 30, 0.15) 50%, rgba(255, 252, 30, 0.15) 75%, transparent 75%, transparent);
+}
+.progress-bar-danger {
+  background-color: #c62760;
+}
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-linear-gradient(45deg, rgba(252, 59, 42, 0.15) 25%, transparent 25%, transparent 50%, rgba(252, 59, 42, 0.15) 50%, rgba(252, 59, 42, 0.15) 75%, transparent 75%, transparent);
+  background-image: -o-linear-gradient(45deg, rgba(252, 59, 42, 0.15) 25%, transparent 25%, transparent 50%, rgba(252, 59, 42, 0.15) 50%, rgba(252, 59, 42, 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(135deg, rgba(252, 59, 42, 0.15) 25%, transparent 25%, transparent 50%, rgba(252, 59, 42, 0.15) 50%, rgba(252, 59, 42, 0.15) 75%, transparent 75%, transparent);
+}
+
+
+/** ATENÇÃO 
+===========
+Lembrar de colocar a classe primary do close no tupi _alert.scss
+===========
+**/
+
+
+.alert-primary {
+  background: $alert-info-bg;
+  border-color: $alert-info-border;
+  color: $alert-primary-text;
+  .close {
+    border-radius: 50%;
+    border: 1px solid #3187c0;
+    color: #3187c0;
+  }
+}
+
+.alert-info {
+  background-color: #9954bb;
+  border-color: #7643a8;
+  color: #ffffff;
+  .close {
+    border-radius: 50%;
+    border: 1px solid #3187c0;
+  	color: #ffffff;
+  }  
+}
+
+.alert-dados {
+    background-color: #ffffff;
+    border-color: #cdced0;
+    color: #444444;
+    border-radius: 3px;
+    padding-bottom: 25px;
+}
+
+
+
+/** ==========================
+--- Ajuste do styleguide ----
+========================== **/
+/* Apaga o h1 do styleguide */
+.apaga {
+  display: none;
+}
+
+#fundo {
+   background-image: url("../img/bg.png");
+}
