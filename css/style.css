@@ -417,3 +417,7 @@ Lembrar de colocar a classe primary do close no tupi _alert.scss
 #fundo {
    background-image: url("../img/bg.png");
 }
+
+.col-center-block {
+  text-align: center!important;
+}
