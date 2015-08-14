@@ -588,9 +588,13 @@ $state-success-text:             #01a283 !default;
 $state-success-bg:               #def0d8 !default;
 $state-success-border:           #dae9d6 !default;
 
-$state-info-text:                #217ebb !default;
-$state-info-bg:                  #d7edfb !default;
-$state-info-border:              #b3d9ee !default;
+$state-info-text:                #ffffff !default;
+$state-info-bg:                  #9954bb !default;
+$state-info-border:              #7643a8 !default;
+
+$state-primary-text:             #227fbb !default;
+$state-primary-bg:               #d8edfc !default;
+$state-primary-border:           #b3d9ee !default;
 
 $state-warning-text:             #f9ab2d !default;
 $state-warning-bg:               #fbf4e1 !default;
@@ -719,6 +723,10 @@ $alert-success-border:        $state-success-border !default;
 $alert-info-bg:               $state-info-bg !default;
 $alert-info-text:             $state-info-text !default;
 $alert-info-border:           $state-info-border !default;
+
+$alert-primary-bg:            $state-primary-bg !default;
+$alert-primary-text:          $state-primary-text !default;
+$alert-primary-border:        $state-primary-border !default;
 
 $alert-warning-bg:            $state-warning-bg !default;
 $alert-warning-text:          $state-warning-text !default;

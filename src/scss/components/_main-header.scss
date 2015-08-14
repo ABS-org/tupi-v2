@@ -1,5 +1,5 @@
 .navbar-default {
-  background-color: $tabatinga-energized;
+  background-color: #fff;
   border: 1px solid transparent;
   border-bottom: 10px solid $tabatinga-calmer;
   border-radius: 0;
@@ -322,6 +322,12 @@ fieldset[disabled] {
       }
     }
   }
+}
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .navbar-brand {

@@ -247,8 +247,8 @@
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #227fbb;
-  background-color: #e6e6e6;
+  color: $tabatinga-calmer;
+  background-color: #227fbb;
   border-color: #dddddd;
 }
 .pagination > .active > a,
@@ -325,11 +325,13 @@
   border: 1px solid #dddddd;
   border-radius: 0;
   margin: 0 4px;
+  border-radius: 100px;
 }
 .pager li > a:hover,
 .pager li > a:focus {
   text-decoration: none;
-  background-color: #e6e6e6;
+  background-color: #337ab7;
+  color: $tabatinga-calmer;
 }
 .pager .next > a,
 .pager .next > span {
@@ -353,6 +355,7 @@
   margin-bottom: 21px;
   list-style: none;
   border-radius: 0;
+  background: transparent;
 }
 .breadcrumb > li {
   display: inline-block;
